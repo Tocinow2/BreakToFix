@@ -1,0 +1,61 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 32px;
+  background: #2D3A4F;
+  color: #D5DAE3;
+}
+
+.footer__marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer__img {
+  width: 34px;
+  height: auto;
+  border-radius: 8px;
+}
+.footer__nombre {
+  font-size: 19px;
+  color: #C98B6B;
+}
+.footer__nombre b {
+  font-weight: 800;
+  color: #fff;
+}
+.footer__lema {
+  font-size: 15px;
+}
+
+.footer__links {
+  display: flex;
+  gap: 24px;
+}
+.footer__links a {
+  font-size: 15px;
+  color: #D5DAE3;
+  text-decoration: none;
+}
+.footer__links a:hover {
+  color: #fff;
+}
+
+.footer__copy {
+  font-size: 14px;
+  color: #A9B4C6;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__marca {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

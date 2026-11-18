@@ -1,0 +1,115 @@
+.login {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 20px;
+  background: #F3DEDC;
+}
+
+.login__icono {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(45, 58, 79, 0.25);
+}
+
+.login__titulo {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #2D3A4F;
+}
+
+.login__subtitulo {
+  margin-top: 8px;
+  font-size: 16px;
+  text-align: center;
+  color: #6B7689;
+}
+
+.login__card {
+  width: 100%;
+  max-width: 480px;
+  margin-top: 28px;
+  padding: 36px 40px;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(45, 58, 79, 0.1);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.campo__label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #6B7689;
+}
+
+.campo__input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #F0C9C4;
+  border-radius: 14px;
+  background: #fff;
+  font: inherit;
+  font-size: 15px;
+  color: #2D3A4F;
+}
+
+.campo__input::placeholder {
+  color: #A3ABB9;
+}
+
+.campo__input:focus {
+  outline: none;
+  border-color: #C98B6B;
+  box-shadow: 0 0 0 3px rgba(201, 139, 107, 0.25);
+}
+
+.login__olvido {
+  display: block;
+  margin: -6px 0 20px;
+  text-align: right;
+  font-size: 13px;
+  color: #C98B6B;
+  text-decoration: none;
+}
+.login__olvido:hover { text-decoration: underline; }
+
+.boton-principal {
+  width: 100%;
+  padding: 16px;
+  border: 0;
+  border-radius: 16px;
+  background: #2D3A4F;
+  box-shadow: 0 8px 18px rgba(45, 58, 79, 0.25);
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.boton-principal:hover { transform: translateY(-1px); }
+
+.login__pie {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid #EEF0F4;
+  text-align: center;
+  font-size: 14px;
+  color: #6B7689;
+}
+.login__pie a {
+  font-weight: 700;
+  color: #C98B6B;
+  text-decoration: none;
+}

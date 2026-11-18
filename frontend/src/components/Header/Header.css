@@ -1,0 +1,133 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(46, 58, 77, 0.85);
+  backdrop-filter: blur(10px);
+  transition: background 0.25s, box-shadow 0.25s;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 32px;
+}
+
+/* Logo + nombre */
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  color: #C98B6B;
+}
+.header__logo b {
+  font-weight: 800;
+  color: #fff;
+}
+.header-logo {
+  width: 36px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Menú + acciones */
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.85;
+}
+.menu a:hover { opacity: 1; }
+
+.acciones {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header__login {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.85;
+}
+.header__login:hover { opacity: 1; }
+
+.header__registro {
+  padding: 8px 18px;
+  border: 1px solid #C98B6B;
+  border-radius: 10px;
+  color: #C98B6B;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+.header__registro:hover {
+  background: #C98B6B;
+  color: #fff;
+}
+
+/* ---------- Variante: con scroll (fondo blanco) ---------- */
+.header.header--scrolled {
+  background: #fff;
+  backdrop-filter: none;
+  box-shadow: 0 2px 12px rgba(45, 58, 79, 0.12);
+}
+.header--scrolled .header__logo b {
+  color: #2D3A4F;
+}
+.header--scrolled .menu a,
+.header--scrolled .header__login {
+  color: #6B7689;
+  opacity: 1;
+}
+.header--scrolled .menu a:hover,
+.header--scrolled .header__login:hover {
+  color: #2D3A4F;
+}
+
+.header--scrolled .header__login {
+  padding: 10px 20px;
+  border-radius: 14px;
+  background: #F3DEDC;
+  color: #2D3A4F;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.header--scrolled .header__registro {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 14px;
+  background: #2D3A4F;
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(45, 58, 79, 0.25);
+}
+
+.header--scrolled .header__registro:hover {
+  background: #1E2738;
+}
+
+/* Botones compartidos (los usa el Hero) */
+.btn {
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+.btn-claro { background: rgba(255, 255, 255, 0.14); }
+.btn-oscuro { background: #1E2738; }
